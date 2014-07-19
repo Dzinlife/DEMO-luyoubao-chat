@@ -84,7 +84,7 @@ body {
   background-image: linear-gradient(left top, #14779b, #62a569);
   height: 528px;
   width: 320px;
-  overflow: none;
+  overflow: hidden;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
@@ -94,31 +94,33 @@ body {
 .toolbar {
   height: 49px;
   width: 100%;
-  background-color: rgba(20, 20, 20, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   position: absolute;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
   bottom: 0;
   padding: 0 6px;
   box-sizing: border-box;
 }
 
-/* line 38, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 .toolbar-btn {
-  color: #33bbff;
+  color: #0b66ff;
   font-size: 17px;
   height: 100%;
   display: inline-block;
   width: 100px;
 }
-/* line 44, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 .toolbar-btn:active {
   color: black;
 }
-/* line 47, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 .toolbar-btn .container {
   display: inline-block;
   padding: 0 8px;
   box-sizing: border-box;
   height: 34px;
+  font-weight: bold;
   line-height: 34px;
   margin-top: 8px;
   border-radius: 4px;
@@ -128,30 +130,30 @@ body {
   transition: 0.3s ease-out;
 }
 
-/* line 60, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 .toolbar-btn-highlight {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  background-color: white;
+  color: #444;
 }
 
-/* line 65, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 .toolbar-btn-left {
   float: left;
   text-align: left;
 }
 
-/* line 71, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 .toolbar-btn-mid {
   text-align: center;
 }
 
-/* line 76, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 .toolbar-btn-right {
   float: right;
   text-align: right;
 }
 
-/* line 81, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 .action-menu {
   width: 300px;
   position: absolute;
@@ -168,35 +170,28 @@ body {
   transition: 0.3s ease-out;
 }
 
-/* line 94, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 .menu-cell {
   height: 44px;
   line-height: 44px;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
-  background-color: rgba(20, 20, 20, 0.9);
-  margin-bottom: 1px;
+  box-shadow: 0 0 1px 0 #444;
+  background-color: rgba(255, 255, 255, 0.95);
   text-align: center;
-  color: #33bbff;
+  color: #0b66ff;
 }
-/* line 103, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 .menu-cell:active {
-  background-color: black;
-  color: white;
-}
-/* line 107, ../sass/screen.scss */
-.menu-cell:last-child {
-  box-shadow: none;
-  margin-bottom: 0;
+  background-color: #ddd;
 }
 
-/* line 113, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 .scroll-container {
-  height: 519px;
+  height: 100%;
   width: 100%;
   overflow: scroll;
 }
 
-/* line 120, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 .scroll-content {
   width: 100%;
   min-height: 100%;
@@ -204,12 +199,12 @@ body {
   box-sizing: border-box;
 }
 
-/* line 127, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 .template {
   display: none;
 }
 
-/* line 130, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 .chat-device {
   position: relative;
   width: 100%;
@@ -219,7 +214,7 @@ body {
   padding: 0 0 0 55px;
   font-weight: 300;
 }
-/* line 141, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 .chat-device .avatar {
   position: absolute;
   left: 0;
@@ -231,19 +226,19 @@ body {
   background-image: url("../avatar.png");
   background-size: 100%;
 }
-/* line 152, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 .chat-device .title-container {
   max-width: 100%;
   position: relative;
 }
-/* line 156, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 .chat-device .title {
   -webkit-font-smoothing: subpixel-antialiased;
   font-size: 17px;
   font-weight: bold;
   display: inline-block;
 }
-/* line 162, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 .chat-device .time {
   position: relative;
   left: 6px;
@@ -253,7 +248,7 @@ body {
   vertical-align: bottom;
   opacity: 0.5;
 }
-/* line 171, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 .chat-device .content {
   position: relative;
   clear: left;
@@ -262,7 +257,7 @@ body {
   font-size: 17px;
   line-height: 22px;
 }
-/* line 179, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 .chat-device .action {
   margin-top: 8px;
   max-width: 100%;
@@ -277,12 +272,12 @@ body {
   background-color: rgba(255, 255, 255, 0.05);
   margin-right: 10px;
 }
-/* line 192, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 .chat-device .action:active {
   background-color: white;
-  color: #33bbff;
+  color: #0b66ff;
 }
-/* line 197, ../sass/screen.scss */
+/* line 198, ../sass/screen.scss */
 .chat-device .reply-quote-mark {
   -webkit-font-smoothing: subpixel-antialiased;
   font-weight: bold;

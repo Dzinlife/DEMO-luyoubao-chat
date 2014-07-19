@@ -12,7 +12,7 @@ body{
 	font-family: "Helvetica Neue", "sans-serif";
 }
 
-$blue : #33BBFF;
+$blue : #0b66ff;
 
 .view{
 	position: relative;
@@ -21,15 +21,16 @@ $blue : #33BBFF;
 	height: 528px;
 	width: 320px;
 	// margin: 0 auto;
-	overflow: none;
+	overflow: hidden;
 	@include user-select(none);
 }
 
 .toolbar{
 	height: 49px;
 	width: 100%;
-	background-color: rgba(20,20,20,0.8);
+	background-color: rgba(255,255,255,0.8);
 	position: absolute;
+	box-shadow: 0 0 1px rgba(0,0,0,0.3);
 	bottom: 0;
 	padding: 0 6px;
 	box-sizing: border-box;
@@ -50,6 +51,7 @@ $blue : #33BBFF;
 		padding: 0 8px;
 		box-sizing : border-box;
 		height: 34px;
+		font-weight: bold;
 		line-height: 34px;
 		margin-top: 8px;
 		border-radius: 4px;
@@ -58,8 +60,8 @@ $blue : #33BBFF;
 }
 
 .toolbar-btn-highlight{
-	background-color: rgba(0,0,0,0.5);
-	color: white;
+	background-color: white;
+	color: #444;
 }
 
 .toolbar-btn-left{
@@ -94,24 +96,23 @@ $blue : #33BBFF;
 .menu-cell{
 	height: 44px;
 	line-height: 44px;
-	box-shadow: 0 1px 0 rgba(0,0,0,0.6);
+	box-shadow: 0 0 1px 0 #444;
 
-	background-color: rgba(20,20,20,0.9);
-	margin-bottom: 1px;
+	background-color: rgba(255,255,255,0.95);
+	// margin-bottom: 1px;
 	text-align: center;
 	color: $blue;
 	&:active{
-		background-color: black;
-		color: white;
+		background-color: #ddd;
 	}
 	&:last-child{
-		box-shadow: none;
-		margin-bottom: 0;
+		// box-shadow: none;
+		// margin-bottom: 0;
 	}
 }
 
 .scroll-container{
-	height: 519px;
+	height: 100%;
 	width: 100%;
 	overflow: scroll;
 	// -webkit-overflow-scrolling: touch;
