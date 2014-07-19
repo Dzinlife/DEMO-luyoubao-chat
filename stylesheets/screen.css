@@ -94,7 +94,7 @@ body {
 .toolbar {
   height: 49px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(20, 20, 20, 0.8);
   position: absolute;
   bottom: 0;
   padding: 0 6px;
@@ -173,7 +173,7 @@ body {
   height: 44px;
   line-height: 44px;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(20, 20, 20, 0.9);
   margin-bottom: 1px;
   text-align: center;
   color: #33bbff;
