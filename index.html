@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" charset="utf8">
+		<link rel="stylesheet" href="stylesheets/screen.css" type="text/less"/>
+		<script src="jquery-2.0.3.min.js" type="text/javascript"></script>
+		<script src="fastclick.js" type="text/javascript"></script>
+		<script src="all.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<div class="view">
+			<div class="scroll-container">
+				<div class="scroll-content">
+					<div class="chat-device">
+						<div class="avatar"></div>
+						<div class="title-container">
+							<div class="title">流量</div>
+							<span class="time">6分钟前</span>
+						</div>
+						<div class="content">
+							上传：50kB/s<br>
+							下载：200kB/s
+						</div>
+						<div class="action">查看流量详情</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="navbar"></div>
+
+			<div class="action-menu action-menu-left">
+				<div class="menu-cell" data-action="traffic">流量</div>
+				<div class="menu-cell" data-action="devices">设备连接</div>
+			</div>
+			<div class="action-menu action-menu-mid">
+				<div class="menu-cell" data-action="wifi">wifi设置</div>
+				<div class="menu-cell" data-action="wan">互联网设置</div>
+				<div class="menu-cell" data-action="lan">局域网设置</div>
+			</div>
+			<div class="action-menu action-menu-right">
+				<div class="menu-cell" data-action="reboot">重启</div>
+				<div class="menu-cell" data-action="upgrade">系统升级</div>
+			</div>
+
+			<div class="toolbar">
+				<div class="toolbar-btn toolbar-btn-left">
+					<div class="container">状态</div>
+				</div>
+				<div class="toolbar-btn toolbar-btn-mid">
+					<div class="container">网络设置</div>
+				</div>
+				<div class="toolbar-btn toolbar-btn-right">
+					<div class="container">其他</div></div>
+			</div>
+			
+		</div>
+
+		<div class="template">	
+			<div class="chat-device">
+				<div class="avatar"></div>
+				<div class="title-container">
+					<div class="title"></div>
+					<span class="time">6分钟前</span>
+				</div>
+				<div class="content"></div>
+				<!-- <div class="action">查看流量详情</div> -->
+			</div>
+		</div>
+	</body>
+
+</html>
